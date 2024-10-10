@@ -1,0 +1,114 @@
+body {
+    background-color: #3c4242;
+    color: #c4ac88
+    ;
+}
+.meow-script-regular {
+    font-family: "Meow Script", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+header {
+    display: inline-flex;
+    align-items: center;
+    width: 100%;
+}
+
+.title {
+    display: inline-flex;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+}
+
+#meow{
+    display: inline-block;
+    font-family: "Meow Script", cursive;
+    font-size: 3em;
+}
+
+#logo{
+    float: inline-start;
+    height: 10vh;
+}
+
+.card {
+    display: inline-block;
+    margin: 5px;
+    border-style: solid;
+    border-radius: 3%;
+    border-color: bisque;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.card > img {
+    max-height: 70%;
+    max-width: 70%;
+}
+h3 {
+    column-span: all;
+}
+
+@media (max-width: 480px) {
+    #meow{
+        font-size: 2em;
+    }
+    .container {
+        display: grid;
+        grid-template-columns: minmax(220px, 380px);
+    }
+}
+        
+@media (min-width: 481px ) and (max-width: 680px) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(220px, 380px));
+    }
+}
+
+@media (min-width: 681px ) and (max-width: 1200px) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(220px, 380px));
+    }
+    #information {
+        column-span: all;
+    }
+}
+
+@media (min-width: 1201px) and (max-width: 1600px) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(220px, 380px));
+    }
+
+}
+
+@media (min-width: 1601px) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(5, minmax(220px, 380px));
+    }
+}
+
+#content {
+    margin-left: 5%;
+    width: 90%;
+    
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+li {
+    list-style: none;
+
+}
